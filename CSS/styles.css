@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+#wrapper {
+  width: 80em;
+  margin: 0 auto;
+  /* scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh; */
+}
+section {
+  scroll-snap-align: start;
+}
+.primarycolor {
+  background-color: #253324;
+}
+
+/* from here header ,navigation styles */
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+#header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #70637f;
+  padding: 0.5em;
+}
+nav ul li {
+  list-style: none;
+  padding: 0 10px;
+}
+a {
+  text-decoration: none;
+}
+nav ul {
+  display: flex;
+  margin: 0 5px;
+}
+nav ul li a {
+  font-weight: bold;
+  font-size: large;
+  color: #9bc063;
+}
+.logo a {
+  font-size: 2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: #9bcb2a;
+}
+
+.search input {
+  border-radius: 8em;
+  border: none;
+  padding: 2%;
+  width: 15em;
+}
+nav ul li a:hover {
+  color: #4bdc0d;
+}
+.login ul li {
+  background-color: #9bcb2a;
+  padding: 0 10px;
+  margin: 0 5px;
+  border-radius: 8px;
+}
+.login ul li a {
+  color: #15250e;
+  padding: 1em;
+}
+.login ul li a:hover {
+  color: greenyellow;
+}
+
+/* from here jumbotron take into 100vh */
+
+#jumbo {
+  height: 100vh;
+  padding: 4em 0 0 0;
+}
+
+/* from here hero section */
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+.heroLeft {
+}
+.heroLeft h2 a {
+  width: 50%;
+  float: left;
+}
+.heroLeft h2 {
+  font-size: 4rem;
+  padding: 1em 0;
+  color: #70637f;
+}
+.heroLeft a {
+  padding: 1em;
+  background-color: #9bcb2a;
+  margin: 1em;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+.heroLeft a:hover {
+  background-color: #15250e;
+  color: #4bdc0d;
+  transform: scale(1.1);
+}
+.heroImg img {
+  width: 100%;
+  float: right;
+  transition: 0.3s;
+}
+.heroImg img:hover {
+  transform: scale(1.1);
+}
+
+/* from here uni and course - sub section */
+.subSec {
+  margin: 2em 0 0 0;
+}
+.university h2 {
+  text-align: center;
+  color: #482374;
+  font-size: 2rem;
+}
+.uniBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.uniBox img {
+  mix-blend-mode: multiply;
+  transition: 0.3s;
+}
+.uniBox img:hover {
+  transform: scale(1.1);
+}
+.uniBox img {
+  width: 10em;
+}
+.subRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* from here course list */
+#cousrseList {
+  height: 100vh;
+  width: 100%;
+  padding: 4em 0 0 0;
+}
+.cousrseListArea h3 {
+  font-size: 4rem;
+  color: #70637f;
+}
+.cousrseListArea p {
+  font-size: 1.5rem;
+  color: gray;
+  font-family: Arial;
+  padding: 0 0 1em 0;
+}
+
+.crsdetailfullImg img {
+  border-bottom-right-radius: 5em;
+}
+.courseCont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+
+.boxarea img {
+  width: 100%;
+  height: 25em;
+  mix-blend-mode: multiply;
+  background-color: white;
+  border-radius: 8px;
+  margin: 1em 0;
+}
+.boxarea {
+  transition: 0.3s;
+}
+
+.boxarea:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* from here full course details styles */
+#courseDetails {
+  height: 100vh;
+  padding: 4em 0 0 0;
+}
+.courseBox {
+  background-color: #70637f;
+  display: flex;
+  border-bottom-right-radius: 5em;
+  border-top-left-radius: 5em;
+}
+.crsdetailfull {
+  width: 100%;
+  height: 10em;
+  padding: 2em;
+}
+.crsdetailfull h4 {
+  color: #253324;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.crsdetailfull h5 {
+  color: #253324;
+  font-weight: bold;
+  background-color: #4bdc0d;
+  width: fit-content;
+  border-radius: 8px;
+  padding: 0 1em;
+  display: inline-block;
+  margin: 5em;
+}
+.crsdetailfull p {
+  font-size: large;
+  display: inline-block;
+}
+.rating {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 5em 0;
+}
+.btnCourselist button {
+  padding: 2em;
+  width: 10em;
+  border-radius: 8px;
+  border: none;
+  background-color: #9bc063;
+  color: #15250e;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 1em 1em 0;
+  transition: 0.3s;
+}
+.btnCourselist button:hover {
+  background-color: #15250e;
+  color: #4bdc0d;
+  transform: scale(1.1);
+}
+.btnCourselist {
+  display: flex;
+  align-items: center;
+}
+.people {
+  display: flex;
+  align-items: center;
+}
+.people h6 {
+  font-size: large;
+}
+
+/* from here entroll section */
+#entrollpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.enterEntroll a {
+  background-color: #9bcb2a;
+  padding: 4em;
+  font-size: 3rem;
+  font-family: "Arial";
+  font-weight: bold;
+  border-top-left-radius: 5em;
+  border-bottom-right-radius: 5em;
+  box-shadow: 8px 8px 20px rgba(9, 205, 88, 0.8);
+}
+.enterEntroll {
+  transition: 0.3s;
+}
+.enterEntroll:hover {
+  transform: scale(1.1);
+}
+
+/* from here course fee calculaor */
+#feeCal {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(7, auto);
+  padding: 10em 0;
+}
+#feeCal h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #70637f;
+  font-weight: bold;
+}
+#feeCal select,
+input {
+  width: 50%;
+  height: 20%;
+  border-radius: 8px;
+  border: solid #9bcb2a 0.3em;
+  font-weight: bold;
+}
+#feeCal label {
+  font-size: 2rem;
+}
+#total {
+  margin-top: 20px;
+  font-weight: bold;
+}
+.feeBtn {
+  padding: 0 1em;
+  background-color: #9bcb2a;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: none;
+}
+
+/* from here footer area style */
+#footer {
+  background-color: #70637f;
+  padding: 1em;
+  height: fit-content;
+}
+.footerarea {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10em;
+}
+
+.subcribearea h4 {
+  font-size: 2rem;
+}
+.input1 {
+  border-radius: 8px;
+  width: 20em;
+  height: 2em;
+  padding: 0 1em;
+  border: none;
+}
+.input2 {
+  padding: 1em 2em;
+  border-radius: 8px;
+  border: none;
+  background-color: #9bc063;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.input2:hover {
+  background-color: #15250e;
+  color: #4bdc0d;
+}
+.footerSocial {
+  display: flex;
+  align-items: first baseline;
+  justify-content: flex-end;
+  gap: 5em;
+}
+.footerlink ul li p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.footerlink a {
+  color: black;
+}
+.arr {
+  font-weight: bold;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" action="">
+        <h1>Registraion</h1>
+        <div>
+          <label for="name">Full Name: </label>
+          <input id="name" type="text" name="name" />
+          <span id="nameError"></span>
+        </div>
+        <div>
+          <label for="email">Email: </label>
+          <input type="text" id="email" name="email" />
+          <span id="emailError"></span>
+        </div>
+
+        <div>
+          <label for="phone">Phone (Enter Only 10 Digits): </label>
+          <input type="phone" id="phone" name="phone" maxlength="10" />
+          <span id="phoneError"></span>
+        </div>
+        <div>
+          <label for="password">Password: </label>
+          <input type="password" id="password" name="password" />
+          <span id="passwordError"></span>
+        </div>
+        <div>
+          <label for="cnfpassword">Confirm Password: </label>
+          <input type="password" id="cnfpassword" name="cnfpassword" />
+          <span id="cnfPasswordError"></span>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="test.js"></script>
+  </body>
+</html>
